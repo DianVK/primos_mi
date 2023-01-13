@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0026)http://www.primos-mi-eood.com/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" class=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Home page</title>
+<meta name="description" content="Kaelble brand name is well known, respected and can be a good addition to the Atlas product line.The company was founded in 1884 as a repair facility. The production then expanded to cover heavy">
+<meta name="keywords" content="Keywords">
+<meta name="Author" content="WEB BY DIAN.VK © 2015 - 2022 TOP NON STOP - all rights reserved ©">
+<meta name="classification" content="Internet">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<meta name="GOOGLEBOT" content="index,follow">
+<meta name="revisit-after" content="5 Days">
+<meta name="robots" content="index,follow">
+
+			<meta property="og:title" content="Home page">
+			<meta property="og:description" content="Kaelble brand name is well known, respected and can be a good addition to the Atlas product line.The company was founded in 1884 as a repair facility. The production then expanded to cover heavy">
+			<meta property="og:type" content="website">
+			<meta property="og:url" content="http://www.primos-mi-eood.com/">
+			<meta property="fb:app_id" content="333196893480110">
+			<meta property="og:image" content="http://www.primos-mi-eood.com/files/9826/ckfinder/images/250MH.jpg">
+	
+<link type="text/css" rel="stylesheet" href="./index_files/jquery-ui-1.10.3.custom.css">
+<link type="text/css" rel="stylesheet" href="./index_files/jquery.fancybox.css">
+<link type="text/css" rel="stylesheet" href="./index_files/sample_templates_grids_new.css">			
+
+<script type="text/javascript" language="javascript" src="./index_files/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" language="javascript" src="./index_files/jquery-ui-1.10.3.custom.min.js"></script>
+<script type="text/javascript" language="javascript" src="./index_files/jquery.fancybox.js"></script>
+
+<script type="text/javascript" language="javascript" src="./index_files/functions.js"></script>
+
+<script type="text/javascript" language="javascript" src="./index_files/owl.carousel.min.js"></script>
+<script type="text/javascript" language="javascript" src="./index_files/jssor.slider.mini.js"></script>
+<link type="text/css" rel="stylesheet" href="./index_files/jssor-slider.css">
+
+	<script type="text/javascript">
+		var slider_type = '1';
+			
+		$(document).ready( function() {
+				
+			var options = jsSorSliderOptions(slider_type);
+			if( slider_type != '3' )
+			{
+	            var options1 = {
+	                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+	                $SlideDuration: 1200,                               //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+	                
+	                $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
+	                    $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
+	                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+	                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+	                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+	                    $SpacingY: 8                                    //[Optional] Vertical space between each item in pixel, default value is 0
+	                },
+
+	                $ArrowNavigatorOptions: {                           //[Optional] Options to specify and enable arrow navigator or not
+	                    $Class: $JssorArrowNavigator$,                  //[Requried] Class to create arrow navigator instance
+	                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+	                    $AutoCenter: 2                                  //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+	                }
+	            };
+
+				var options2 = $.extend({}, options, options1);
+				var jssor_slider1 = new $JssorSlider$("headers", options2);
+			}
+			else
+			{
+				var jssor_slider1 = new $JssorSlider$("headers", options);
+			}
+
+			//responsive code begin
+            function ScaleSlider() {
+                var bodyWidth = 1100;//document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$SetScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+
+            //responsive code end
+			
+			});
+		
+    </script>
+
+
+
+	<link type="text/css" rel="stylesheet" href="./index_files/style_orange.php">
+
+
+
+<link href="./index_files/css" rel="stylesheet" type="text/css">
+
+
+<script type="text/javascript">
+	var content_animation = '0';
+	
+	$(document).ready( function() {
+		checkForDynamicTemplate();
+
+		if( content_animation > 0 )
+		{
+			var random_animation = false, minimum = 1, maximum = 6;
+			if( content_animation == 7 )
+				random_animation = true;
+
+			var continuousElements = $('div.content').find('.sp-row-content');
+			for (var i = 0; i < continuousElements.length; i++)
+			{
+				var inview = new Waypoint({
+			    	element: continuousElements[i],
+			    	handler: function(direction) {
+			    		if( random_animation )
+			    			content_animation = Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
+			    		this.element.className += ' animation'+content_animation;
+			    		this.destroy();
+			    	},
+					offset: '75%'
+			  	})
+			}
+		}
+	});
+	
+</script>
+
+<!--[if IE]>
+<style type="text/css">
+  	a.button-small:hover, a.button-big:hover, div.main-menu ul ul li:hover > a 
+	{
+		background: #767676;
+	}
+</style>
+<![endif]-->
+
+<style type="text/css">.fancybox-margin{margin-right:0px;}</style></head>
+
+	
+<body class="full-width">
+	
+        
+	<div class="wrapper">
+		<div onclick="$(&quot;html, body&quot;).animate({ scrollTop:0 },1000);" class="btt hidden">^</div>
+		<script type="text/javascript">
+			$(window).scroll(function() {
+				if ( $(document).scrollTop() ) {
+					document.querySelector('.btt').className="btt";
+				} else {
+					document.querySelector('.btt').className="btt hidden";
+				}
+			});
+			
+		</script>
+		<div class="content-wrapper">
+		
+			<!-- header -->
+
+<div class="header section group">
+	
+			<div class="top">
+		<div class="top-container">
+						
+						
+						<div class="langs col span_12_of_12">
+				<div class="languages">
+							               			               		<div class="language selected">
+								<div class="flag"><img src="./index_files/en_small.png" alt=""></div>
+		                       	<div class="name">English</div>
+		                      	<br class="cleaner">
+							</div>
+								               		               								<div class="language">
+								<div class="flag"><img src="./index_files/bg_small.png" alt=""></div>
+		                       	<div class="name"><a href="http://www.primos-mi-eood.com/bg/" title="Български">Български</a></div>
+		                      	<br class="cleaner">
+							</div>
+		               			               				</div>
+			</div>
+					</div>
+		<br class="cleaner">
+    </div>
+    	
+	<div class="header-content col span_12_of_12">
+		
+		<div class="span_12_of_12">
+			<form method="get" action="http://www.primos-mi-eood.com/search/" id="search_form">			
+				<div class="search-main-menu">
+					<div class="search-field">
+						<input type="text" name="keyword" placeholder="Search" value="">
+					</div>
+					<div class="search-button">
+						<a title="Search" href="javascript: void(0);" onclick="$(&#39;#search_form&#39;).submit();"><img src="./index_files/search_button.png" alt="Search" style="border: none;"></a>
+					</div>
+				</div>
+			</form>
+					</div>
+		
+		<br class="cleaner">
+		
+							        
+                            <div class="logo col span_12_of_12"><a href="http://www.primos-mi-eood.com/"><img src="./index_files/primos-mi-eood-logo.jpg" alt="www.primos-mi-eood.com" title="www.primos-mi-eood.com" border="0"></a></div>
+                                		
+				
+		<br class="cleaner">
+
+				
+	    
+		<div class="main-menu span_12_of_12" id="main-menu">
+			
+			
+			
+			
+			
+			
+												<ul class="main-menu-items" id="main-menu-items">
+													<li class="active ">
+																									
+						<a href="http://www.primos-mi-eood.com/" class="main-link active" title="Home page">Home</a>		
+						
+											</li>	
+									<li class="">
+																									
+						<a href="http://www.primos-mi-eood.com/pages/about-us" class="main-link " title="About us">About us</a>		
+						
+											</li>	
+									<li class="">
+																									
+						<a href="http://www.primos-mi-eood.com/catalog" class="main-link " title="Catalog - Escavators">Products</a>		
+						
+											</li>	
+									<li class="">
+																									
+						<a href="http://www.primos-mi-eood.com/pages/service-and-support" class="main-link " title="Services | Service&amp;Support">Service &amp; Support</a>		
+						
+											</li>	
+									<li class="">
+																									
+						<a href="http://www.primos-mi-eood.com/gallery" class="main-link " title="Products | Images">Gallery</a>		
+						
+											</li>	
+									<li class="">
+																									
+						<a href="http://www.primos-mi-eood.com/contacts" class="main-link " title="Contacts">Contacts</a>		
+						
+											</li>	
+									</ul>
+			
+			
+		</div>
+		
+		<div class="main-menu mobile col span_12_of_12">
+			<div class="mobile-menu"><a href="javascript:void();" class="main-link" onclick="showMobileMenu();">menu <span class="icon">☰</span></a></div>
+			
+			
+			
+			
+			
+			
+												<ul class="mobile-menu-items">
+					
+									<li>
+																									
+						<a href="http://www.primos-mi-eood.com/" class="main-link sub0 active" title="Home page">Home</a>
+						
+											</li>	
+									<li>
+																									
+						<a href="http://www.primos-mi-eood.com/pages/about-us" class="main-link sub0 " title="About us">About us</a>
+						
+											</li>	
+									<li>
+																									
+						<a href="http://www.primos-mi-eood.com/catalog" class="main-link sub0 " title="Catalog - Escavators">Products</a>
+						
+											</li>	
+									<li>
+																									
+						<a href="http://www.primos-mi-eood.com/pages/service-and-support" class="main-link sub0 " title="Services | Service&amp;Support">Service &amp; Support</a>
+						
+											</li>	
+									<li>
+																									
+						<a href="http://www.primos-mi-eood.com/gallery" class="main-link sub0 " title="Products | Images">Gallery</a>
+						
+											</li>	
+									<li>
+																									
+						<a href="http://www.primos-mi-eood.com/contacts" class="main-link sub0 " title="Contacts">Contacts</a>
+						
+											</li>	
+									</ul>
+			
+			
+		</div>
+		
+		<br class="cleaner">
+	    	</div>
+	
+		<div class="headers-container">
+		<div id="headers" class="headers" jssor-slider="true" style="width: 1100px; height: 403.67px;">
+    		
+		    			
+						
+				       	
+       			       	
+	        	            		            
+	                        	        
+	        	        	<!-- Arrow Left -->
+		        
+		        <!-- Arrow Right -->
+		        
+			        <div style="position: absolute; top: 0px; left: 0px; width: 1199px; height: 440px; transform-origin: 0px 0px 0px; transform: scale(0.917431);"><div class="headers" style="display: block; position: relative; top: 0px; left: 0px; overflow: visible;"><div u="slides" class="slides" style="z-index: 0; position: absolute; overflow: hidden;"><div style="position: absolute; z-index: 0; pointer-events: none; left: 0px; top: 0px;"><div style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute; overflow: hidden; z-index: 1;">
+	               					               				<img u="image" class="header-image" src="./index_files/kaelble-header-2.jpg" border="0" alt="" title="" style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute;">
+	               				               						               				               										            	                       	<div style="width: 1199px; height: 440px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div><div style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute; overflow: hidden; opacity: 0.67; clip: rect(0px 1199px 440px 600px); z-index: 1;">
+	               					               				<img u="image" class="header-image" src="./index_files/kaelble-header-4.jpg" border="0" alt="" title="" style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute;">
+	               				               						               				               										            	                       	<div style="width: 1199px; height: 440px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div><div style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute; overflow: hidden; opacity: 0.67; clip: rect(0px 600px 440px 0px); z-index: 1;">
+	               					               				<img u="image" class="header-image" src="./index_files/kaelble-header-4.jpg" border="0" alt="" title="" style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute;">
+	               				               						               				               										            	                       	<div style="width: 1199px; height: 440px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div></div></div><div u="slides" class="slides" style="z-index: 0; position: absolute; overflow: hidden;"><div style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute; opacity: 0; background-color: rgb(0, 0, 0);"></div>
+	        		        		        		            		                		               			<div style="width: 1199px; height: 440px; top: 0px; left: 1199px; position: absolute; overflow: hidden;">
+	               						               							               				<div id="header_title" style="position: absolute; padding: 1em; width: 36%; height: auto; top: 130px; left: 180px; text-align: left; font-size: 16px; z-index:1000; overflow: hidden; background: rgba(241,89,34,0.6);">
+			               										                            <span style="display: block; padding: 0 0 0.5em 0; line-height: 1em; text-transform: uppercase; font-size: 30px;color: #FFFFFF;">
+					                            	Available &amp; Cost-effective					                            </span>
+				                           					                            					                            <p style="text-transform: uppercase;"><strong>Kaelble front loaders</strong></p>
+				                            				                        </div>
+			                        		                        	               				<img u="image" class="header-image" src="./index_files/kaelble-header-1.jpg" border="0" alt="" title="" style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute;">
+	               				               						               				               										            	                       	<div style="width: 1199px; height: 440px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div>
+	                        	                    	                	                		                	                		                	            	            		                		                	                		               			<div style="width: 1199px; height: 440px; top: 0px; left: -1199px; position: absolute; overflow: hidden;">
+	               					               				<img u="image" class="header-image" src="./index_files/kaelble-header-2.jpg" border="0" alt="" title="" style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute;">
+	               				               						               				               										            	                       	<div style="width: 1199px; height: 440px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div>
+	                        	                    	                	                		                	            	            		                		                	                		                	                		               			<div style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute; overflow: hidden; display: none;">
+	               					               				<img u="image" class="header-image" src="./index_files/kaelble-header-4.jpg" border="0" alt="" title="" style="width: 1199px; height: 440px; top: 0px; left: 0px; position: absolute;">
+	               				               						               				               										            	                       	<div style="width: 1199px; height: 440px; top: 0px; left: 0px; z-index: 1000; display: none;"></div></div>
+	                        	                    	                	               
+		        		    </div><div u="navigator" class="jssorb05" style="position: absolute; bottom: 17px; left: 567.5px; width: 64px; height: 16px;">
+		            	<!-- bullet navigator item prototype -->
+		            			            		
+		            			            <div u="prototype" style="position: absolute; width: 16px; height: 16px; left: 0px; top: 0px;" class=""></div><div u="prototype" style="position: absolute; width: 16px; height: 16px; left: 24px; top: 0px;" class=""></div><div u="prototype" style="position: absolute; width: 16px; height: 16px; left: 48px; top: 0px;" class="av"></div></div><span u="arrowleft" class="jssora20l" style="width: 55px; height: 55px; top: 192.5px; left: 8px; display: none;"></span><span u="arrowright" class="jssora20r" style="width: 55px; height: 55px; top: 192.5px; right: 8px; display: none;"></span></div></div></div>
+    </div>
+    				
+</div>
+<!-- /header -->
+
+
+<script type="text/javascript" language="javascript">
+	$(document).ready(
+		function()
+		{	
+			main_menu_show_hide_children();
+			
+			$("div.languages div.language").hover(
+					function()
+					{
+						$(this).addClass("hover");
+					},
+					function()
+					{
+						$(this).removeClass("hover");
+					}
+			);
+			
+			calculateTitleOffset();
+		}
+	);
+	
+	function calculateTitleOffset()
+	{
+		if ( $("div.top-banners")[0] && $("div.top-banners").height() > 0 )
+		{
+			var win = $(window);
+			if ( win.width() <= 620 )
+			{ 
+				var top_offset = 170 + $("div.top-banners").height() + 35;
+				$("div.big-block div.big-block-title").css("top", "-" + top_offset + "px")
+			}
+			else if ( win.width() <= 820 )
+			{
+				var top_offset = 175 + $("div.top-banners").height() + 35;
+				$("div.big-block div.big-block-title").css("top", "-" + top_offset + "px")
+			}
+			else
+			{
+				var top_offset = 200 + $("div.top-banners").height() + 35;
+				$("div.big-block div.big-block-title").css("top", "-" + top_offset + "px")
+			}
+		}
+	}
+	
+	$(window).on('resize', function()
+	{
+		calculateTitleOffset();
+	});
+	
+	function showMobileMenu(){
+		$(".mobile-menu-items").toggle("slow");
+	}
+	
+	function showSubMobile(el){
+		$(el).next("ul").toggle("slow");
+	}
+	
+</script>
+
+
+	    
+		    						
+						<!-- content -->
+			<div class="content home ">
+				
+								
+				<div class="page-content ">
+					
+					
+					<div class="big-block">
+	
+	<div class="big-block-content">
+		<div class="pages">
+			
+			<div class="pages-content">
+				<div class="sp-row sp-temp-11" style="padding-top: 10px; padding-bottom: 10px; margin-top: 0px; margin-bottom: 0px; background-color: rgb(241, 89, 34);"><div class="sp-row-content clearfix"><div class="sp-row-content clearfix editorblock mce-content-body" id="mce_28" style="position: relative;" spellcheck="false" contenteditable="true">
+<div class="sp-col sp-span-4" style="font-size: 12px;">
+<div>
+<h3 style="text-align: center;"><span style="color: #ffffff;">ATLAS Loaders, Excavators &amp; Cranes</span></h3>
+</div>
+<div><img class="bottom-offset" src="./index_files/250MH.jpg" height="250" width="375"></div>
+<strong> <span style="color: #ffffff; font-size: 14px;">Wide Range</span> </strong></div>
+<div class="sp-col sp-span-4" style="text-align: left; font-size: 12px;">
+<div>
+<h3 style="text-align: center;"><span style="color: #ffffff;">Service and Support</span></h3>
+</div>
+<div><img class="bottom-offset" src="./index_files/crawler-atlas.jpg" height="250" width="400"></div>
+<strong> <span style="color: #ffffff; font-size: 14px;">24 / 7</span> </strong></div>
+<div class="sp-col sp-span-4" style="text-align: left; font-size: 12px;">
+<div>
+<h3 style="text-align: center;"><span style="color: #ffffff;">Forklifts, weldments and steel structures</span></h3>
+</div>
+<div style="text-align: center;"><img class="bottom-offset" src="./index_files/primos-mi-eood-building-1.jpg" height="250" width="399"></div>
+<strong> <span style="color: #ffffff; font-size: 14px;"> Years of experience</span> </strong></div>
+</div>
+<p><input name="mce_28" type="hidden"></p>
+<p><input name="mce_28" type="hidden"></p>
+<p><input name="mce_28" type="hidden"><input name="mce_28" type="hidden"></p>
+<p><input name="mce_28" type="hidden"> <input name="mce_28" type="hidden"><input name="mce_28" type="hidden"></p>
+<p><input name="mce_28" type="hidden"></p>
+<p><input name="mce_28" type="hidden"></p>
+<p><input name="mce_28" type="hidden"></p></div></div><div class="sp-row sp-temp-44" style="background-position: center; padding-top: 10px; margin-top: 0px; margin-bottom: 0px; background-image: url(&quot;/files/9826/2015/12/10/kaelble-atlas-loaders.jpg&quot;); background-repeat: no-repeat;"><div class="sp-row-content clearfix"><div class="sp-col sp-span-5">
+<div>
+<h3><span style="color: rgb(255, 102, 0);">Kaelble Atlas Loaders</span></h3>
+</div>
+<div><img class="bottom-offset" src="./index_files/products_frontloaders.jpg" height="239" width="400"></div>
+</div>
+<div class="sp-col sp-span-4">
+<div style="margin-top: 60px;">
+<p align="LEFT"><span style="font-size: 14px;"><span style="color: rgb(255, 102, 0);">KAELBLE ATLAS Heavy Wheel Loaders combine </span><span style="color: rgb(255, 102, 0);">compact dimensions with impressive productivity for </span><span style="color: rgb(255, 102, 0);">outstanding value. Their strengths really come </span></span><span style="font-size: 14px;"><span style="color: rgb(255, 102, 0);">to the fore in applications including earth moving, </span><span style="color: rgb(255, 102, 0);">road construction, recycling, wood processing, </span><span style="color: rgb(255, 102, 0);">agriculture and certain areas of the alternative </span><span style="color: rgb(255, 102, 0);">energy industry.</span></span></p>
+<p align="LEFT"><span style="font-size: 14px;"><span style="color: rgb(255, 102, 0);"></span></span></p>
+<p align="LEFT"><span style="font-size: 14px;"><span style="color: rgb(255, 102, 0);">Machines produced with more than 50 years </span><span style="color: rgb(255, 102, 0);">experience, KAELBLE ATLAS has the specialist </span><span style="color: rgb(255, 102, 0);">knowledge to deliver high quality machines for the </span><span style="color: rgb(255, 102, 0);">widest range of applications.</span></span></p>
+</div>
+</div>
+<div class="sp-col sp-span-3">
+<div style="margin-top: 45px; float: right;"><img class="bottom-offset" src="./index_files/BSA1-150019-primos-mi-eood-en-15-small.jpg" height="275" width="200">
+<p style="text-align: center;"><span style="color: rgb(255, 102, 0); font-size: 14px;">ATLAS EAST&nbsp;ISO Certificate</span></p>
+</div>
+</div></div></div><div class="sp-row sp-temp-44" style="padding-top: 5px; padding-bottom: 15px; margin-top: 0px; margin-bottom: 0px; background-color: rgb(241, 89, 34);"><div class="sp-row-content clearfix"><div class="sp-col sp-span-5">
+<div>
+<h3><span style="color: rgb(255, 255, 255);">ATLAS EAST LTD &amp; ATLAS MASCHINEN GMBH</span></h3>
+</div>
+<div><img class="bottom-offset" src="./index_files/Atlas_160MH.jpg" height="300" width="400"></div>
+</div>
+<div class="sp-col sp-span-4">
+<div style="margin-top: 60px;">
+<p><span style="color: rgb(255, 255, 255); font-size: 14px;">Welcome to ATLAS EAST LTD</span></p>
+<p><span style="color: rgb(255, 255, 255); font-size: 14px;"></span></p>
+<p align="LEFT"><span style="color: rgb(255, 255, 255); font-size: 14px;">We are a professional company with&nbsp;years of experience and tradition in production of</span></p>
+<p align="LEFT"><span style="color: rgb(255, 255, 255); font-size: 14px;">the welded and machined steel structures, including the assemblies, sub-assemblies and elements for manufacturers of building machinery, special machines, industrial appliances and structural equipment.</span></p>
+<p align="LEFT"></p>
+<p align="LEFT"><span style="color: rgb(255, 255, 255); font-size: 14px;">With highly motivated employees, knowledgeable and experienced team,&nbsp;ATLAS East&nbsp;imports complete ATLAS Equipment on Bulgarian market and provides spare parts, and&nbsp;service support.</span></p>
+<p><span style="font-family: ArialMT;" face="ArialMT"></span></p>
+</div>
+</div>
+<div class="sp-col center sp-span-3">
+<div style="margin-top: 45px; float: right;"><img class="bottom-offset" src="./index_files/BSA1-150019-primos-mi-eood-14001-en-small.jpg" height="275" width="200">
+<p style="text-align: center;"><span style="color: rgb(255, 255, 255); font-size: 14px;">ATLAS EAST&nbsp;ISO Certificate</span></p>
+</div>
+</div></div></div>
+				<div class="cleaner"></div>
+			</div>
+		</div>
+	</div>
+	<div class="big-block-bottom"></div>
+</div>
+
+					
+					
+				</div>
+				
+				<div class="cleaner"></div>
+				
+												
+							
+			</div>
+			<!-- /content -->	
+			
+			<div class="cleaner"></div>
+		</div>
+			
+		<!-- footer -->
+<div class="footer">
+	<div class="footer-content">
+	<div class="sp-row sp-temp-31" style=""><div class="sp-row-content clearfix"><div class="sp-col sp-span-8">
+<div><iframe width="100%" height="310" src="./index_files/embed.html" frameborder="0" style="border: 0px currentColor; border-image: none;"></iframe></div>
+<div>&nbsp;</div>
+</div>
+<div class="sp-col sp-span-4">
+<div>
+<p><strong></strong><strong>ATLAS EAST LTD</strong><br>&nbsp;17 Kuklensko Shosse Blvd, Plovdiv, Bulgaria</p>
+<p><span style="font-size: 14px;"><strong>Lachezar Lulchev</strong></span></p>
+<p><span class="icon-phone">&nbsp;&nbsp; Tel: +359 88 462&nbsp;49 48<br></span></p>
+<p><span class="icon-mail">&nbsp;&nbsp; Email: <a href="mailto:lucky@primos-mi-eood.com">lucky@primos-mi-eood.com</a><br></span></p>
+<p><span style="font-size: 14px;"><strong>Maria Decheva</strong></span></p>
+<p><span class="icon-phone">&nbsp;&nbsp; Tel: +359 88 660 24 44<br></span></p>
+<p><span class="icon-mail">&nbsp;&nbsp; Email: decheva@primos-mi-eood.com<br></span></p>
+<p><span style="font-size: 14px;"><strong>Plamen Pashov</strong></span></p>
+<p><span class="icon-phone">&nbsp;&nbsp; Tel: +359 88 491 62 30<br></span></p>
+<p><span class="icon-mail">&nbsp;&nbsp; Email: plamen.pashov@primos-mi-eood.com<br></span></p>
+</div>
+</div></div></div>
+	
+		<div class="footer-menu col span_12_of_12">
+										<a href="http://www.primos-mi-eood.com/" class="main-link" title="Home">Home</a>
+							<a href="http://www.primos-mi-eood.com/pages/about-us" class="main-link" title="About us">About us</a>
+							<a href="http://www.primos-mi-eood.com/catalog" class="main-link" title="Products">Products</a>
+							<a href="http://www.primos-mi-eood.com/pages/service-and-support" class="main-link" title="Service &amp; Support">Service &amp; Support</a>
+							<a href="http://www.primos-mi-eood.com/gallery" class="main-link" title="Gallery">Gallery</a>
+							<a href="http://www.primos-mi-eood.com/contacts" class="main-link" title="Contacts">Contacts</a>
+						<a href="http://www.primos-mi-eood.com/html-sitemap" title="Site map">Site map</a>
+		</div>
+		<br class="cleaner">
+	</div>
+
+	<div class="copyrights">
+		<div class="copyrights-content">
+		<div class="copyrights-text col span_6_of_12">WEB BY DIAN.VK © 2015 - 2022 TOP NON STOP - all rights reserved ©</div>
+		
+				<div class="footer-brand col span_6_of_12">
+           <div class="powered-by">
+			<a href="http://www.WEB BY DIAN.VK © 2015 - 2022 TOP NON STOP - all rights reserved ©/" title="WEB BY DIAN.VK © 2015 - 2022 TOP NON STOP - all rights reserved ©" target="_blank"><img src="./index_files/www.WEB BY DIAN.VK © 2015 - 2022 TOP NON STOP - all rights reserved ©_footer_logo_white.png" alt="Website development by www.WEB BY DIAN.VK © 2015 - 2022 TOP NON STOP - all rights reserved ©" title="Website development by www.WEB BY DIAN.VK © 2015 - 2022 TOP NON STOP - all rights reserved ©" border="0"></a>
+           </div>
+    	</div>
+    	
+       <br class="cleaner">
+	</div>
+	</div>
+</div>
+<!-- /footer -->			
+		
+	</div>
+	
+	    
+
+
+</body></html>
